@@ -7,20 +7,6 @@ import java.time.format.DateTimeFormatter
 
 class FuelCalculate {
 
-    var oneKm = 0.0
-    var oneKmPrice = 0.0
-    var total = 0.0
-    var oneKgPrice = 0.0
-    var totalKg= 0.0
-    var totalConsumption = 0.0
-    var kmDifference= 0.0
-    var speedPercent = 0.0
-    var totalLitter = 0.0
-    var priceDate2 = ""
-    var lastDayPrice2 = 0.0
-    var oneKmPr = 0.0
-
-
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun localDate():Pair<String,String>{

@@ -4,43 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.Fuel.MainActivity"
     android:background="@drawable/mainimage"
-    >
+    tools:context="app.Fuel.MainActivity">
 
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <ImageButton
-            android:id="@+id/calculate_btn"
-            android:layout_width="209dp"
-            android:layout_height="80dp"
-            android:contentDescription="@string/text"
-            android:padding="5dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/imagebutton" />
-    </LinearLayout>
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="347dp"
-        android:layout_height="494dp"
-        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView2"
@@ -48,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:hint="MESAFE * "
+
             android:textColorHint="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -58,6 +40,7 @@
             android:layout_height="50dp"
             android:layout_margin="8dp"
             android:ems="10"
+            android:inputType="numberDecimal"
             android:hint="KM"
             android:textColor="#DF3900"
             android:textColorHint="@color/black" />
@@ -78,7 +61,9 @@
             android:layout_height="50dp"
             android:layout_margin="8dp"
             android:ems="10"
-            android:hint="TL"
+            android:inputType="numberDecimal"
+
+            android:hint="LT"
             android:textColor="#DF3900"
             android:textColorHint="@color/black" />
 
@@ -98,6 +83,8 @@
             android:layout_height="50dp"
             android:layout_margin="8dp"
             android:ems="10"
+            android:inputType="number"
+
             android:hint="KG"
             android:textColor="#DF3900"
             android:textColorHint="@color/black" />
@@ -119,8 +106,35 @@
             android:layout_margin="8dp"
             android:ems="10"
             android:hint="Km/s"
+
+            android:inputType="number"
             android:textColor="#DF3900"
             android:textColorHint="@color/black" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+        <RadioButton
+            android:id="@+id/benzinRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#22A634"
+            android:text="BENZİN" />
+
+            <RadioButton
+                android:id="@+id/motorinRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MOTORİN"
+                android:textColor="#22A634" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/info_id"
@@ -131,6 +145,29 @@
             android:textSize="12sp"
             android:textStyle="bold" />
 
+        <ImageButton
+            android:id="@+id/calculate_btn"
+            android:layout_width="209dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="@string/text"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagebutton" />
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1301452834533419/7744488682">
+        </com.google.android.gms.ads.AdView>
+
     </LinearLayout>
+</ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

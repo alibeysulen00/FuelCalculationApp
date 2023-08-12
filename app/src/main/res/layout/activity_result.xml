@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="373dp"
-        android:layout_height="485dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/border"
@@ -25,23 +25,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:text="Aracın Km/sa tüketim oranı"
+            android:text="100 Km/s tüketilen yakıt"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/EndTotalKmLiterText"
+        <EditText
+            android:id="@+id/oneKmLiterText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
             android:ems="10"
             android:gravity="start|top"
-            android:textSize="20sp"
             android:hint="Null"
             android:inputType="textMultiLine"
-            android:textColor="#FF0404" />
+            android:textColor="#EE0808" />
 
         <TextView
             android:id="@+id/textView6"
@@ -53,17 +52,16 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <TextView
+        <EditText
             android:id="@+id/totalLiterText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
             android:ems="10"
             android:gravity="start|top"
-            android:textSize="20sp"
             android:hint="Null"
             android:inputType="textMultiLine"
-            android:textColor="#FF0404" />
+            android:textColor="#EE0808" />
 
         <TextView
             android:id="@+id/textView7"
@@ -75,17 +73,16 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <TextView
+        <EditText
             android:id="@+id/totalPriceText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
             android:ems="10"
             android:gravity="start|top"
-            android:textSize="20sp"
             android:hint="Null"
             android:inputType="textMultiLine"
-            android:textColor="#FF0404" />
+            android:textColor="#EE0808" />
 
         <TextView
             android:id="@+id/textView8"
@@ -97,39 +94,60 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <TextView
+        <EditText
             android:id="@+id/priceDateText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
             android:ems="10"
             android:gravity="start|top"
-            android:textSize="20sp"
             android:hint="Null"
             android:inputType="textMultiLine"
-            android:textColor="#FF0404" />
+            android:textColor="#EE0808" />
 
         <TextView
-            android:id="@+id/textView9"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Benzin fiyat"
+            android:text="Benzin Fiyatı"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/lastDayPriceText"
+        <EditText
+            android:id="@+id/benzinFiyat"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="10dp"
             android:ems="10"
-            android:textSize="20sp"
             android:gravity="start|top"
             android:hint="Null"
             android:inputType="textMultiLine"
-            android:textColor="#FF0404" />
-        />
+            android:textColor="#EE0808" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motorin Fiyatı"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/motorinFiyat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Null"
+            android:inputType="textMultiLine"
+            android:textColor="#EE0808" />
+
+
+
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

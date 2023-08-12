@@ -5,6 +5,9 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface FuelPriceRepository {
+    //Interface FuelPriceRepository does not have constructors
+
+
     @GET("api/fuelprices/prices/archive")
     fun getFuelPrices(
         @Query("DistrictCode") districtCode: String,
@@ -12,4 +15,6 @@ interface FuelPriceRepository {
         @Query("EndDate") endDate: String,
         @Query("IncludeAllProducts") includeAllProducts: Boolean
     ): Call<List<FuelPriceResponse>>
+
+
 }
