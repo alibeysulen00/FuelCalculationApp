@@ -22,5 +22,5 @@
 </ul>
 
 <a href="https://play.google.com/store/apps/details?id=app.Api.fuelcalculationapp&hl=tr&gl=US">
-  <img src="https://github.com/svg/svgo" alt="Uygulamayı indirmek için Tıklayın"
+  <img src="en_get.svg" alt="Uygulamayı indirmek için Tıklayın"
     </a>
