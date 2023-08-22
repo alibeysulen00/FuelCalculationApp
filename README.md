@@ -25,11 +25,11 @@
 <br>
 
 
-![Add user ](resim1.jpeg)
+![Add user ](image1_200x350.jpg)
 <br>
-![Add user ](resim2.jpeg)
+![Add user ](image2_200x350.jpg)
 <br>
-![Add user ](resim3.jpeg)
+![Add user ](image3_200x350.jpg)
 
 
 
